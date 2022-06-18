@@ -43,3 +43,5 @@ e.target.classList // Devuelve un array con las clases que tiene la etiqueta htm
 e.target.parentElement //  El parentElement Identifica el elemento padre del elemento clicado, siendo el div el elemento padre del input y el li el elemento padre del div. A medida que agregamos parentElement, se irá subiendo hasta llegar al elemento que se quiere identificar.
 
 e.target.localName // Identifica el elemento que se ha clicado en el DOM (input, label, button, etc)
+
+e.target.tex // Identifica el texto donde se hace el target
