@@ -1,0 +1,10 @@
+
+https://www.npmjs.com/package/http-server
+
+
+Sirve para probar aplicaciones hechas en react o angular luego de que hicieron el build 
+
+dirigirse a la carpeta raiz del proyecto en la consola 
+
+escribir http-server -o 
+

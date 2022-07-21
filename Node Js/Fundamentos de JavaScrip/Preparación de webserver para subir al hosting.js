@@ -18,4 +18,7 @@
 
     const port = process.env.PORT  // es el puerto que elegimos por defecto en el archivo .env, si se encuentra ocupado el hosting va a buscar otro puerto que este disponible para ejecutar la aplicación 
 
+  6) Crear un archivo en la raiz del proyecto que se llame .gitignore en el que colocamos node_modules/ para que cuando hagamos el push en git no se envíen los módulos 
+
 */
+
