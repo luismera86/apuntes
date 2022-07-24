@@ -1,0 +1,9 @@
+// En este archivo se lista las carpetas y directorios que no quieres que se suban al repositorio 
+
+Por ejemplo:
+
+// Respetar la forma en la que se escribe, los archivos y carpetas listatos no le debería aparecer la U ya que git no les estaría haciendo seguimiento.
+
+node_modules/
+dist/
+.env
