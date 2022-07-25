@@ -67,9 +67,26 @@ Luego se usa `git s` para ver el status
 - `git branch`  Muestra la lista de ramas creadas
 - `git branch -m nombre-rama nuevo-nombre-rama` Modifica el nombre de una rama por ejemplo git branch -m master main modifica el nombre de la rama master a main
 - `git checkout nombre-rama`    Nos mueve a la rama elegida
+- `git checkout -b nombre-rama` Creamos una nueva rama y automáticamente nos redirige a la misma
 - `git branch -d nombre-rama`   Borramos la rama elegida
 - `git branch -d nombre-rama -f`   Borramos la rama elegida de manera forzada, esto suele suceder cuando la rama a eliminar tiene cambios que no se hicieron merge con ninguna otra rama
 
 ### Merge
 
 - `git merge nombre-rama`   Trae todos los archivos de la rama elegida a la rama donde se encuentran posicionados
+
+### Merge conflictos
+
+- Modificación manual: Editas el archivo de manera manual para que quede la versión final
+- Accept incoming change: Modifica el archivo como y lo deja como viene del merge y luego hacer un commit luego de la unión para que desaparezcan los ! de los archivos que tenían conflicto
+
+## Tags - Etiquetas
+
+Los tag normalmente se usan para marcar en puntos del proyecto datos como las versiones del estado del proyecto, como por ejemplo en este commit está la versión v1.0.0 y así indicamos en por medio de un tag un punto especifico de los commit
+
+- `git tag` Muestra la lista de tags
+- `git tag nombre-tag`  Creamos un tag en el commit donde estamos situados
+- `git tag -d nombre-tag`   Eliminamos el tag
+- `git tag -a nombre-tag -m "Mensaje del tag o Descripción"`  Creamos un tag con una versión anotada en el que podemos agregarle un mensaje o descripción
+- `git tag -a nombre-tag hash-commit -m "Mensaje del tag o Descripción`   Ponemos un tag a un commit especifico
+- `git show nombre-tag` Vemos información completa del tag con datos de creación, autor, etc
