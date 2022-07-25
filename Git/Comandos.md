@@ -90,3 +90,15 @@ Los tag normalmente se usan para marcar en puntos del proyecto datos como las ve
 - `git tag -a nombre-tag -m "Mensaje del tag o Descripción"`  Creamos un tag con una versión anotada en el que podemos agregarle un mensaje o descripción
 - `git tag -a nombre-tag hash-commit -m "Mensaje del tag o Descripción`   Ponemos un tag a un commit especifico
 - `git show nombre-tag` Vemos información completa del tag con datos de creación, autor, etc
+
+## Stash
+
+El Stash es como una bobeda donde quedan guardados todos los cambios realizados en el repositorio que no se encuentren guardados en un commit, no es recomendado crear mas de un Stash ya que puede ser complicado recuperar la información de lo trabajado en el, es preferible trabajar con ramas para evitar conflictos y errores y utilizar el stash como último recurso.
+
+- `git stash`   Creamos el stash, guarda todos los cambios realizados que no se hicieron commit en el stash y vuelve el repositorio al estado del último commit
+- `git stash list`  Nos muestra la lista de stash realizados
+- `git stash pop`   Recuperamos el repositorio al estado del último stash creado y se elimina el stash, en caso de tener conflictos en los documentos se los resuelve de la misma manera que en el merge
+- `git stash clear` Borra todos los stash creados (en caso de arrepentirse y querer recuperar un stash se hace lo mismo para recuperar un commit con un `git reflog`)
+- `git stash drop stash@{numero-stash}` Eliminamos el stash elegido, entre los { } ponemos el número del stash que queremos eliminar como 0,1, 2 etc
+- `git stash save "Mensaje o descripción del stash"`    Guardamos el stash con un mensaje o descripción para poder identificarlo
+
