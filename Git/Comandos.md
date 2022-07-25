@@ -3,7 +3,7 @@
 ## Configuración del repositorio
 
 - `git config --global user.name "Luis Mera"`
-- `git config --global user.mail "luismera86@gmail.com"`
+- `git config --global user.email "luismera86@gmail.com"`
 
 Para configurar de manera global que inicie en el en la rama main
 
