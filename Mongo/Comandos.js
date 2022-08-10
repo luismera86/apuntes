@@ -94,6 +94,8 @@ db.coll.findOneAndDelete( filter, options ): Elimina un solo documento según el
 - sort: para establecer orden para el filtro
 - projection: para elegir campos de salida.
 
+- Para modificar los array dentro del documento utilizar los métodos $push (para insertar elementos) $pull (para eliminar elementos con parámetros condicionales) $pop, $slice, $each
+
 
 
 */                                                                                                                                 
