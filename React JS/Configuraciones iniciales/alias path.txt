@@ -1,0 +1,16 @@
+en el archivo tscofig.json 
+"compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+
+en vite.config.ts
+import * as path from 'path'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
+  },
+})

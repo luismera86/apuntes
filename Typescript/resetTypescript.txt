@@ -1,0 +1,1 @@
+Para resetear typescript cuando no te reconoce paquetes instalados apreta cntrl+shift+p y en > escribes typescript.restartTsServer
