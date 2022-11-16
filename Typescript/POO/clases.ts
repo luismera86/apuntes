@@ -47,7 +47,7 @@ class Iva extends Sale{
     }
 
     getPriceConIva(): number {
-        let total = super.getTotal() * this.iva
+        let total = super.getTotal() * this.iva // le agregamos el iva al precio total que nos trae del método del padre
 
         return total
     }
