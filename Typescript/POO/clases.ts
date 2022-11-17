@@ -55,4 +55,7 @@ class Iva extends Sale{
 
 const totalPrice = new Iva(100)
 
-console.log(totalPrice.getPriceConIva()) // 121 
+console.log(totalPrice.getPriceConIva()) // 121
+
+
+
