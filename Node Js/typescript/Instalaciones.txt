@@ -1,0 +1,8 @@
+
+Para iniciar un proyecto con la configuración básica de de typescript 
+- tsc --init
+
+Instalar una dependencia para organizar typescript 
+
+- npm i tslint -d
+
