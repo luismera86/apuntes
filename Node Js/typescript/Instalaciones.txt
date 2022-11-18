@@ -6,3 +6,11 @@ Instalar una dependencia para organizar typescript
 
 - npm i tslint -d
 
+Instalar typescript de manera local para poder configurar tslint
+
+- npm i typescript -d
+
+En la consola ejecutar el archivo tslint por medio de esta ruta se generará el archivo tslint.json
+
+- ./node_modules/.bin/tslint --init
+
