@@ -1,0 +1,4 @@
+- MySQL utiliza modelos de base de datos relacionales.
+- Al relacionar los datos, evita que haya contenido duplicado.
+- El contenido se relaciona por medio de Llaves (Llave Primaria y Llave Foranea)
+Llave Foranea: es una llave primaria de otra tabla, que se agrega como columna a la tabla que queremos relacionar

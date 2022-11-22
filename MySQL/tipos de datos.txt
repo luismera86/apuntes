@@ -1,0 +1,27 @@
+Tipos de datos: 
+
+- Numéricos: INT, TYNYINT, BIGINT, FLOAT.
+
+INT: es el más común para guardar números enteros
+TYNYINT: se usa para almacenar datos pequeños como unos y ceros, que puedes usar por ejemplo para saber si un usuario está activo o no (el 1 activo y el 0 inactivo)
+BIGINT: se utilizar para almacenar enteros mucho más grandes
+FLOAT: se utiliza para almacenar por ejemplo precios ya que te permite guardar decimales 
+
+- Strings: VARCHAR, TEXT, CHAR
+
+VARCHAR: es el más común para almacenar texto, se le debe indicar una cantidad máxima de caracteres
+TEXT y CHAR: se usa para almacenar texto pero no necesita que le indiques la cantidad máxima de caracteres
+
+- Fecha y hora: DATE, DATETIME, TIME, TIMESTAMP
+
+DATE: sirve para almacenar una fecha, por ejemplo la fecha en la que se realiza una compra.
+DATETIME: sirve para almacenar la fecha y la hora juntos.
+TIME: sirve para almacenar la hora.
+TIMESTAMP: ...
+
+- Otros: BLOB O JSON
+
+BLOB: sirve para almacenar archivos pero no es recomendado usar ya que puede tornarse pesada la base de datos
+JSON: es un lenguaje de transporte de datos muy ligero.
+
+
