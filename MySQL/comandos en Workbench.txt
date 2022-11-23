@@ -32,6 +32,11 @@
 > SELECT * FORM platillos WHERE nombre LIKE '%Cafe%' 
 
 - Filtrar en dos columnas
-* Filtramos de la tabla reservaciones dos columnas al mismo tiempo que son nombre y apellido, para ello usamos CONCAT y entre paréntesis colocamos los nombres de las columna, en el medio de ellas un string vacío con un espacio, para separarlas
+* Filtramos de la tabla reservaciones dos columnas al mismo tiempo que son nombre y apellido, para ello usamos CONCAT y entre paréntesis colocamos los nombres de las columna, en el medio de ellas un string vacío con un espacio, para separarlas y con el as le asignamos un alias para que figure como nombre completo
 
-> SELECT * FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Luis Mera%'
+> SELECT * FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) AS 'Nombre completo' LIKE '%Luis Mera%'
+
+- Filtra con múltiples condiciones
+* Filtra de la tabla reservas las fechas y las cantidad de mesas para esa fecha
+
+> SELEC * FORM reservaciones WHERE fecha = '2022-09-20' AND cantidadmesa IN (1, 2)
