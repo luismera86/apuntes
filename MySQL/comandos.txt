@@ -1,0 +1,54 @@
+
+Comandos de mysql para manejo de datos en la terminal
+NOTA: Los comandos tiene que ir con letra mayúscula y con ; al final de la declaración
+
+mysql> SHOW DATABASES;  // Muestra el listado de bases de datos creadas
+
+mysql> CREATE DATABASE nombreBaseDeDatos; // Creamos la base de datos, el nombre de la misma tiene que ir en minúscula
+
+mysql> USE nombreBaseDeDatos; // Este comando es para utilizar determinada base de datos de la lista
+
+mysql> SHOW TABLES; // Este comando es para mostrar las tablas creadas en la base de datos
+
+mysql> CREATE TABLE nombreDeTabla( // Comando para crear una tabla, el nombre deber ir en minúscula y en plural
+    -> id INT(11) NOT NULL AUTO_INCREMENT,
+                    // Para agregar los elementos de la tabla abrimos el paréntesis y apretamos enter, luego en cada linea ponemos los elementos de la tabla, en este caso el elemento es el id, luego se indica que de que tipo es en este caso un entero INT y  entre paréntesis la longitud o cantidad de caracteres máximos que puede tener el elemento. NOT NULL significa que este datos es obligatorio, AUTO_INCREMENT hace que el número se auto incremente a medida que se van sumando id en la tabla. Se coloca una coma al final para colocar un nuevo elemento a la tabla.
+    -> nombre VARCHAR(60) NOT NUL,
+    -> apellido VARCHAR(60) NOT NUL,
+    -> direccion VARCHAR(60),
+    -> PRIMARY KEY (id) // Indicamos que el id va a ser la llave primaria
+    ->); // cerramos el paréntesis de la tabla y terminamos la instrucción para crearla   
+
+mysql> DESCRIBE nombreDeTabla; // Muestra los elementos de la tabla
+
+----- CRUD -------
+
+-CREAR UN REGISTRO
+
+mysql> INSERT INTO nombreDeTabla (nombre, apellido, direccion) // Insertamos valores en la tabla entre () las key de los valores
+    -> VALUES ('Luis', 'Mera', 'Moreno norte 366'); // con VALUES declaramos los valores en el orden que se pusieron en la linea  anterior, si el valor no es obligatorio puedes poner la palabra null en caso de no tener la información
+
+-LEER UN REGISTRO
+
+mysql> SELECT * FROM nombreDeTabla; // Muestra todos los registros de esa tabla 
+
+mysql> SELECt nombre, apellido FROM nombreDeTabla; // muestra solo los valores definidos de la tabla 
+
+mysql> SELECT * FORM nombreDeTabla WHERE id = 2 // muestra solamente la información del registro que tenga el id 2
+
+-ACTUALIZAR UN REGISTRO O HACER UN UPDATE
+
+mysql> UPDATE nombreDeTabla SET nombre = 'Luis Alejandro', direccion = 'Moreno N 366' WHERE id = 1; 
+
+// Decimos que queremos hacer un UPDATE a la tabla y seleccionamos con el SET las propiedades a modificar y le asignamos despues del = el nuevo valor, luego con el WHERE indicamos el id de la linea a modificar 
+
+-ELIMINAR UN REGISTRO
+
+mysql> DELETE FORM nombreDeTabla WHERE id = 1 // elimina el registro con el id 1 
+
+----- MODIFICAR BASES DE DATOS ----- 
+
+mysql> ALTER TABLE nombreDeTabla ADD email VARCHAR(60); // se agrega una nueva columna a la tabla en es te caso el mail, automáticamente todo los registro se les agrega la propiedad mail en null
+
+mysql> ALTER TABLE nombreDeTabla DROP COLUM email; // eliminamos el la columna que creamos anteriormente para todos los registros
+
