@@ -19,5 +19,19 @@
 > SELECT COUNT(platillos.id), categoria.nombre FROM platillos INNER JOIN categoria ON platillos.categoriaId = categoria.id GROUP BY categoriaId GROUP BY categoria.nombre
 
 - Filtrar e ignorar valores duplicados
-* Filra y no muestra los valores repetidos solo toma uno
+* Filtra y no muestra los valores repetidos solo toma uno
 > SELECT DISTINCT precio FROM platillos
+
+- Filtrar columna por valores
+* De la tabla platillos hacemos un filtro de la columna precios entre los valores de 100 y 200 
+> SELECT + FROM platillos WHERE precio BETWEEN 100 AND 200
+
+- Filtrar por palabras
+* Hacemos un filtro de de la tabla platillos en la columna nombres y buscamos todo lo que empiece con las palabras cafe, el % indica que la palabra cafe es el comienzo de la busqueda que puede filtrar todo lo que tenga incluido la palabra cafe
+
+> SELECT * FORM platillos WHERE nombre LIKE '%Cafe%' 
+
+- Filtrar en dos columnas
+* Filtramos de la tabla reservaciones dos columnas al mismo tiempo que son nombre y apellido, para ello usamos CONCAT y entre paréntesis colocamos los nombres de las columna, en el medio de ellas un string vacío con un espacio, para separarlas
+
+> SELECT * FROM reservaciones WHERE CONCAT(nombre, ' ', apellido) LIKE '%Luis Mera%'
