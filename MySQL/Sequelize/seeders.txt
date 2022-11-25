@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=OPqRXKLLM1I
+
+Para iniciar sequelize con los seeders 
+
+> sequelize init
+
+Crear un seeder 
+
+> sequelize seed:generate --name nombreDeTabla 
+
+Insertar los datos de la seed
+
+> sequelize db:seed: --seed nombre del archivo js
