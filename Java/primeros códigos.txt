@@ -1,0 +1,13 @@
+
+Instrucción para imprimir en la consola
+
+
+public Class Ejemplo {
+
+    public static void main(String[] arg) { // Método para imprimir instrucciones en la terminal ejecutados por el código
+    
+    System.out.println('Hola mundo');
+
+    }  
+
+}
