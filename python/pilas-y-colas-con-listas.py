@@ -60,3 +60,5 @@ primer_elemento = cola.popleft()
 print(primer_elemento) # Juan
 print(cola) # deque(['Miguel', 'Maria', 'Armando'])
 
+
+
