@@ -1,5 +1,5 @@
 
-def suma(a, b): # a y b son argumentos que recibe la función
+def suma(a, b): # a y b son argumentos que recibe la función a tra ves de los parametros
   return a + b
 
 resultado = suma(10, 5)
