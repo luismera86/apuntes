@@ -25,6 +25,7 @@ print(test3()) # Cuando la función retorna varios elementos los almacena en una
 
 valor1, valor2, valor3 = test3()
 
-print(valor1)
-print(valor2)
-print(valor3)
+print(valor1) # Hola
+print(valor2) # 20
+print(valor3) # [1,2,3]
+

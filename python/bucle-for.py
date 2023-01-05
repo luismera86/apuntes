@@ -7,6 +7,7 @@ for numero in numeros:
   print(numero)
 
 
+
 # Modificar el contenido de la lista
 
 for numero in numeros:
