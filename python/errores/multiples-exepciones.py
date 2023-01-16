@@ -16,3 +16,5 @@ except ZeroDivisionError:
     print('No se puede dividir por 0 prueba otro número')
 except Exception as e:
     print(type(e).__name__)
+
+
