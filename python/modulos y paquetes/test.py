@@ -2,9 +2,10 @@
 
 # saludos.saludar()
 
-from saludos import saludar, Saludo # importación selectiva del módulo
+from mensajes.hola.saludos import saludar, Saludo # importación selectiva del módulo
+from mensajes.adios.despedida import despedir# importación selectiva del módulo
 
 saludar()
-
 saludo1 = Saludo()
 
+despedir()
