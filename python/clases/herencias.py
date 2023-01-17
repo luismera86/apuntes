@@ -14,3 +14,5 @@ class Adorno(Producto): #Ponemos entre los () la clase padre de donde va a hered
 class Alimento(Producto):
     productor = ''
     distribuido = ''
+
+
