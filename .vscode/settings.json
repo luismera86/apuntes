@@ -7,7 +7,8 @@
         "instanciada",
         "mibase",
         "reflog",
-        "resetear"
+        "resetear",
+        "tuplas"
     ],
     "python.formatting.provider": "black"
 }
