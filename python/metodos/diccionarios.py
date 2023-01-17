@@ -56,3 +56,5 @@ print(colores.pop('negro', 'No encontrado')) # No encontrado
 colores = {'amarillo': 'yellow', 'rojo': 'red', 'azul': 'blue'}
 colores.clear()
 print(colores) # {}
+
+
