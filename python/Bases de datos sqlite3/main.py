@@ -41,6 +41,7 @@ usuarios = [
     ('3234932333', 'Mario', 36, 'mail3@cmail.com'),
 ]
 
+
 cursor.execute("INSERT INTO usuarios VALUES ('3234932358', 'Juan', 36, 'mail3@cmail.com')")
 
 conexion.commit() # este método hace que se guarden los cambios para insertarlos en la base de datos
