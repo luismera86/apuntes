@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "alumno1",
+      "price": "22",
+      "inStock": true,
+      "id": 1
+    },
+    {
+      "name": "alumno3",
+      "price": "22",
+      "inStock": false,
+      "id": 3
+    }
+  ]
+}
