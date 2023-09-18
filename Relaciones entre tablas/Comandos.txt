@@ -1,0 +1,2 @@
+
+- Eliminar una FK de una tabla: ALTER TABLE <nombre_tabla> DROP CONSTRAINT <nombre_fk>

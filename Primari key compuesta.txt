@@ -1,0 +1,10 @@
+- Primary key compuesta
+Una Primary key compuesta puede tener varios campos diferentes, nos permite más flexibilidad a la hora de guardar la información.
+
+CREATE TABLE PagoPaciente(
+		idpago int NOT NULL,
+		idpaciente int NOT NULL,
+		idturno int NOT NULL,
+
+		PRIMARY KEY (idpago, idpaciente, idturno)
+)

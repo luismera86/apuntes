@@ -1,0 +1,2 @@
+- Crear un tipo de dato 
+CREATE TYPE medico from int NOT NULL

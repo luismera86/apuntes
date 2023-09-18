@@ -1,0 +1,19 @@
+
+- Crear una base de datos
+CREATE DATABASE Ejemplo
+
+- Crear una tabla
+CREATE TABLE Paciente1(
+			idpaciente int NOT NULL,
+			nombre varchar(50) NOT NULL,
+			apellido varchar(50) NOT NULL,
+			fnacimiento date NULL,
+			domciliio varchar(60),
+			pais char(3) NULL,
+			telefono varchar(30) NULL,
+			emai varchar(30) NULL,
+			observacion varchar(2000) NULL,
+			fechaAlta datetime NOT NULL,
+			CONSTRAINT PK_idpaciente PRIMARY KEY (idpaciente)
+)
+

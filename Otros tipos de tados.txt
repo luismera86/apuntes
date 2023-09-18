@@ -1,0 +1,14 @@
+
+- SMALLINT : 2 bytes es un tipo de dato numérico que puede almacenar valores enteros en el rango de -32768 a 32767 (ambos inclusive). El valor predeterminado es 0.
+
+- MEDIUMINT : 3 bytes es un tipo de dato numérico que puede almacenar valores enteros en el rango de -8388608 a 8388607 (ambos inclusive). El valor predeterminado es 0.
+
+- INT : 4 bytes es un tipo de dato numérico que puede almacenar valores enteros en el rango de -2147483648 a 2147483647 (ambos inclusive). El valor predeterminado es 0.
+
+- BIGINT : 8 bytes es un tipo de dato numérico que puede almacenar valores enteros en el rango de -9223372036854775808 a 9223372036854775807 (ambos inclusive). El valor predeterminado es 0.
+
+- FLOAT : 4 bytes es un tipo de dato numérico que puede almacenar valores de coma flotante en el rango de -3.402823466E+38 a -1.175494351E-38, 0 y de 1.175494351E-38 a 3.402823466E+38. El valor predeterminado es 0.
+
+- TINYINT: 1 byte es un tipo de dato numérico que puede almacenar valores enteros en el rango de 0 a 255 (ambos inclusive). El valor predeterminado es 0.
+
+- BIT: 1 byte es un tipo de dato numérico que puede almacenar valores enteros en el rango de 0 a 255 (ambos inclusive). El valor predeterminado es 0.

@@ -1,0 +1,4 @@
+- Uno a muchos: 1:N (1 a muchos) 
+- Muchos a muchos: N:N (muchos a muchos) 
+- Uno a uno: 1:1 (uno a uno)
+- Muchos a uno: N:1 (muchos a uno) 

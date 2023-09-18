@@ -1,0 +1,18 @@
+
+Numéricos:
+
+    Enteros: INT, TINYINT, BIT
+
+    Decimales: MONEY, DECIMAL
+
+
+
+Texto:
+
+     CHAR, VARCHAR
+
+
+
+Fecha y Hora:
+
+     DATETIME
