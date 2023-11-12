@@ -14,3 +14,9 @@ docker container ls -a # Ver todos los contenedores
 
 docker container rm id-contenedor # Eliminar un contenedor
 docker container prune # Eliminar todos los contenedores detenidos
+
+docker container run -d <nombre-imagen> # Ejecutar contenedor en segundo plano
+docker container run -dp 80:80 <nombre-imagen> # Ejecutar contenedor en segundo plano y mapear puertos (puerto host:puerto contenedor) 
+docker container stop id-contenedor # Detener contenedor
+docker container start id-contenedor # Iniciar contenedor
+docker container restart id-contenedor # Reiniciar contenedor
