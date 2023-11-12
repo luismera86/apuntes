@@ -1,2 +1,0 @@
-El cors es un Middleware que nos permite proteger nuestro sevidor de manera relativamente superficial, muchos navegadores web pueden dar error de cors si no se ecuentran habilitados.
-

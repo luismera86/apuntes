@@ -1,0 +1,18 @@
+// Comandos Docker image
+
+docker image --help # Lista de comandos para imagens
+
+docker image ls # Lista de imagens
+
+docker image ls -a # Lista de imagens incluindo as intermediárias
+
+docker image rm <image> # Elimina una imagen
+
+docker image rm -f <image> # Elimina una imagen forzadamente
+
+docker image prune # Elimina todas las imágenes que no están en uso
+
+docker image prune -a # Elimina todas las imágenes que no están en uso incluyendo las intermediarias
+
+docker image build -t <image> . # Construye una imagen a partir de un Dockerfile
+

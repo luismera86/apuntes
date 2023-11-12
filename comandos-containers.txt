@@ -1,0 +1,16 @@
+
+// Descargar imagen de Docker Hub y ejecutar contenedor a partir de ella
+
+docker pull nombre-imagen # Descargar imagen de Docker Hub
+
+docker container run nombre-imagen # Ejecutar contenedor a partir de una imagen de Docker Hub
+
+// Comandos de container (contenedor) en Docker
+
+docker container --help # Ver opciones de los contenedores
+docker container ls -a # Ver todos los contenedores
+
+// Comandos de limpieza de container (contenedor) en Docker
+
+docker container rm id-contenedor # Eliminar un contenedor
+docker container prune # Eliminar todos los contenedores detenidos
