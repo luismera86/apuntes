@@ -1,0 +1,11 @@
+
+
+https://docs.docker.com/engine/tutorials/networkingcontainers/
+
+docker network --help # Listamos las opciones de la red
+docker network ls # Listamos las redes creadas
+docker network create <nombre> # Creamos una red
+docker network inspect <nombre> # Inspeccionamos la red
+docker network connect <nombre> <nombre_contenedor> # Conectamos un contenedor a una red para que se puedan comunicar entre si
+docker network disconnect <nombre> <nombre_contenedor> # Desconectamos un contenedor de una red
+docker network inspect bridge # Inspeccionamos la red bridge

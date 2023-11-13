@@ -1,0 +1,9 @@
+
+- Bind volumes: En Docker, los "bind volumes" (volúmenes de enlace o volúmenes montados) son una forma de compartir datos entre el sistema operativo host y los contenedores. Permiten que un directorio o archivo en el sistema de archivos del host sea montado directamente en un contenedor Docker. Esto significa que los cambios realizados en el sistema de archivos del contenedor también se reflejarán en el sistema de archivos del host y viceversa.
+
+Cuando ejecutas un contenedor Docker y especificas un bind volume, estás estableciendo una conexión entre una ubicación en el sistema de archivos del host y una ubicación dentro del contenedor. Esto es útil para persistir datos, compartir archivos entre el host y el contenedor, y facilitar el desarrollo y la administración.
+
+- Named Volumes: Los "named volumes" (volúmenes nombrados) en Docker son otra forma de gestionar el almacenamiento persistente y compartir datos entre contenedores y el sistema operativo host. A diferencia de los "bind volumes" que se vinculan directamente a una ruta en el sistema de archivos del host, los "named volumes" son gestionados por Docker y tienen un nombre asociado.
+Cuando creas un "named volume", Docker se encarga de asignar un directorio en el sistema de archivos del host y le asigna un nombre legible y único. Puedes referenciar este volumen por su nombre al ejecutar contenedores, y Docker se encargará de manejar la asociación con el directorio correspondiente en el host.
+
+- Red de contenedores: Si dos contenedores o más están conectados en la misma red, van a poder comunicarse entre ellos. Esto es útil para aplicaciones que se comunican entre sí, como por ejemplo un servidor web y un servidor de base de datos. También es útil para aplicaciones que se comunican con servicios externos, como por ejemplo un servidor web que se comunica con un servicio de autenticación externo. Pero si no lo están no van a poder comunicarse entre ellos.

@@ -1,0 +1,6 @@
+
+docker volume --help # Ayuda de docker volume
+docker volume create <volume-name> # Creamos un volumen
+docker volume ls # Listamos los volumenes
+docker volume inspect <volume-name> # Inspeccionamos un volumen
+docker volume rm <volume-name> # Eliminamos un volumen

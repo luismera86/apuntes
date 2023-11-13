@@ -1,0 +1,16 @@
+
+// Crear el contenedor con una base de datos de MariraDB 
+docker container run --name world-db -e MARIADB_USER=user -e MARIADB_PASSWORD=password -e MARIADB_ROOT_PASSWORD=root-secret-password -e MARIADB_DATABASE=world-db -dp 3306:3306 mariadb:jammy
+
+// Crear un contenedor con phpmyadmin
+docker run --name phpmyadmin -dp 8080:80 -e PMA_ARBITRARY=1 phpmyadmin:5.2.0-apache
+
+
+// Comando asignando una red desde la inicialización del contenedor
+
+// Crear el contenedor con una base de datos de MariraDB 
+docker container run --name world-db -e MARIADB_USER=user -e MARIADB_PASSWORD=password -e MARIADB_ROOT_PASSWORD=root-secret-password -e MARIADB_DATABASE=world-db -dp 3306:3306 mariadb:jammy --network world-app
+
+// Crear un contenedor con phpmyadmin
+docker run --name phpmyadmin -dp 8080:80 -e PMA_ARBITRARY=1 phpmyadmin:5.2.0-apache --network world-app
+
