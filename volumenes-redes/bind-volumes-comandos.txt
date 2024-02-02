@@ -1,0 +1,9 @@
+
+16.16-alpine3.16
+
+docker container run --name nest-app -w /app -dp 80:3000 -v "$(pwd)":/app node:16.16-alpine3.16 sh -c "yarn install && yarn start:dev"
+
+// Seguir los log del contenedor
+docker container logs -f <container_id>
+
+
