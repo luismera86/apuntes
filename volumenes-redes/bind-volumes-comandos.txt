@@ -3,7 +3,16 @@
 
 docker container run --name nest-app -w /app -dp 80:3000 -v "$(pwd)":/app node:16.16-alpine3.16 sh -c "yarn install && yarn start:dev"
 
+// -w /app: Establece el directorio de trabajo en /app
+// -dp 80:3000: Mapea el puerto 3000 del contenedor al puerto 80 del host
+// -v "$(pwd)":/app: Monta el directorio actual en /app
+// node:16.16-alpine3.16: Especifica la imagen de la que se va a crear el contenedor
+// sh -c "yarn install && yarn start:dev": Ejecuta el comando yarn install && yarn start:dev en el contenedor
+
+
 // Seguir los log del contenedor
 docker container logs -f <container_id>
 
+// Acceso a la terminal del contenedor
+docker container exec -it <container_id> sh
 
