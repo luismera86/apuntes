@@ -1,0 +1,32 @@
+version: "3" # Está es la version del docker-compose
+
+services: # Aquí se definen los servicios que se van a utilizar
+  db: # Nombre del servicio
+    container_name: postgres_database # Nombre del contenedor
+    image: postgres:15.1 # Imagen que se va a utilizar
+    volumes:
+      # - postgres-db:/var/lib/postgresql/data # Volumen que se va a utilizar para guardar la información
+      - ./postgres-db:/var/lib/postgresql/data # Volumen que se va a utilizar para guardar la información en local (en la carpeta postgres-db) 
+    
+    environment: # Variables de entorno
+      POSTGRES_PASSWORD: 123456
+
+  pgAdmin: # Nombre del servicio
+    depends_on: # Dependencia del servicio
+      - db # Nombre del servicio al que depende este servicio
+    image: dpage/pgadmin4:6.17 # Imagen que se va a utilizar
+    ports:
+      - "8080:80" # Puerto que se va a utilizar
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin # Volumen que se va a utilizar para guardar la información en local (en la carpeta pgadmin)
+      # - Para usuarios de Linux evirar el error de creación de archivos en la carpeta pgadmin se debe cambiar el propietario de la carpeta pgadmin a 5050:5050
+      # sudo chown -R 5050:5050 pgadmin 
+      # sudo chmod -R 777 pgadmin/
+    environment: # Variables de entorno
+      PGADMIN_DEFAULT_EMAIL: superman@google.com # Correo de administrador
+      PGADMIN_DEFAULT_PASSWORD: 123456 # Contraseña de administrador
+
+# # Definimos para crear el volumen que se va a utilizar para guardar la información de la base de datos
+# volumes: # Aquí se definen los volúmenes que se van a utilizar
+#   postgres-db: # Nombre del volumen que se va a utilizar
+#     external: true # Se define que el volumen es externo al contenedor, es opcional si se quiere que el volumen sea externo o no
